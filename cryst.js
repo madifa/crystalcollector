@@ -8,12 +8,17 @@ var crystalThree = Math.floor(Math.random() * 12) + 1;
 var crystalFour = Math.floor(Math.random() * 12) + 1;
 
 var score = 0;
+ 
+$("h1").css({ background: "#ccc", color: "pink"});
+$("h2").css({ background: "yellow", color: "white"});
+$(".hookah").css({ background: "orange", color: "coral" });
+$(".madison").css({ background: "green", color: "gold"});
+$(".score").css({ background: "gold", color: "black"});
 
 $(".hookah").html(randomNum);
 
 
-
-$(".crystal").click(function () {
+$(".crystal").click(function(){
     switch (this.id) {
         case "One":
             score += crystalOne;
@@ -59,9 +64,6 @@ function condition() {
     
     }
 }
-
-
-
 
 function reset() {
      crystalOne = Math.floor(Math.random() * 12) + 1; // reset copy from variables
